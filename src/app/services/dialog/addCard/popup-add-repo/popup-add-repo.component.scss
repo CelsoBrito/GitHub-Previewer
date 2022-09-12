@@ -1,0 +1,15 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.popup-form-field {
+  flex-grow: 1;
+}

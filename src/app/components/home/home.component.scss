@@ -1,0 +1,65 @@
+.linha-titulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-1 {
+  display: flex;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #7159c1;
+  font-weight: bold;
+  margin-top: 32px;
+  font-size: 32px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  font-size: 52px;
+}
+
+.titulo-2 {
+  margin-left: 8px;
+  color: #7159c1;
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.titulo-3 {
+  color: #41cc5f;
+  font-weight: lighter;
+  font-size: 34px;
+}
+
+.titulo-3:hover {
+  text-decoration: underline wavy #7159c1 2px;
+  text-underline-offset: 8px;
+}
+
+.grupo-cards {
+  $margin-x: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: $margin-x;
+  margin-right: $margin-x;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.fab-button {
+  position: fixed;
+  bottom: 32px;
+  right: 25px;
+  z-index: 1;
+}
+
+.fab-button:hover {
+  color: #7159c1;
+  background-color: #cbcbcb;
+  box-shadow: inset 0px 0px 0px 2px #41cc5f;
+}

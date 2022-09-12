@@ -1,0 +1,59 @@
+.repo-card {
+  background-color: #d4d4d4;
+  color: #1c1c1c;
+}
+
+.repo-card:hover {
+  color: #7159c1;
+  background-color: #cbcbcb;
+  box-shadow: inset 0px 0px 0px 2px #41cc5f;
+
+  .card-caracteristica, .card-caracteristica mat-icon{
+    color: #7159c1;
+  }
+}
+
+.mat-expansion-panel-header-title, .card-transformado-div {
+  font-weight: bold;
+}
+
+.mat-expansion-panel-header-description {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.card-transformado-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 48px;
+  margin-top: 4px;
+}
+
+.card-todas-caracteristicas {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-caracteristica {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #7b7b7b;
+}
+
+.card-caracteristica mat-icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 16px;
+  color: #6a6a6a;
+}
+
+.card-body {
+  margin-top: 8px;
+  margin-left: 8px;
+  color: #474647;
+}

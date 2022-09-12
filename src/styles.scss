@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Montserrat, Helvetica Neue Light, Helvetica Neue, Arial, Lucida Grande, sans-serif;
+  background-color: #03091b;
+  color: #e1e1e1;
+}
+
+.background {
+  height: 100vh;
+  max-height: 100vh;
+  box-shadow: inset -120px -120px 300px 10px #7159c164;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+}

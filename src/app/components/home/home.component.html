@@ -1,0 +1,17 @@
+<div class="linha-titulos">
+  <h1 class="titulo-1"><</h1>
+  <h1 class="titulo">GitHub</h1>
+  <h1 class="titulo titulo-2">/</h1>
+  <h1 class="titulo titulo-3">Previewer</h1>
+  <h1 class="titulo-1">></h1>
+</div>
+<div class="grupo-cards" *ngIf="$repos | async as repos; else vazio">
+  <div *ngFor="let repo of repos">
+    <app-card [repo]="repo"></app-card>
+  </div>
+</div>
+<ng-template #vazio>Não repositórios</ng-template>
+
+<button mat-fab class="fab-button" (click)="log()" color="accent" aria-label="Botão de adicinar mais uma luva">
+  <mat-icon>add</mat-icon>
+</button>

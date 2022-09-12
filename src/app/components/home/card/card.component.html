@@ -1,0 +1,37 @@
+<mat-expansion-panel class="repo-card" [hideToggle]="!repo.description" fxLayoutAlign="center">
+  <mat-expansion-panel-header *ngIf="repo.description; else transformaEmDiv">
+    <mat-panel-title>
+      {{repo.full_name}}
+    </mat-panel-title>
+    <mat-panel-description>
+      <div class="card-caracteristica" *ngIf="repo.stargazers_count">
+        <mat-icon>star_outline</mat-icon>{{repo.stargazers_count}}
+      </div>
+      <div class="card-caracteristica" *ngIf="repo.forks_count">
+        <mat-icon>scatter_plot</mat-icon>{{repo.forks_count}}
+      </div>
+      <div class="card-caracteristica" *ngIf="repo.language">
+        <mat-icon>code</mat-icon>{{repo.language}}
+      </div>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <ng-template #transformaEmDiv>
+    <div class="card-transformado-div">
+      {{repo.full_name}}
+      <div class="card-todas-caracteristicas">
+        <div class="card-caracteristica" *ngIf="repo.stargazers_count">
+          <mat-icon>star_outline</mat-icon>{{repo.stargazers_count}}
+        </div>
+        <div class="card-caracteristica" *ngIf="repo.forks_count">
+          <mat-icon>scatter_plot</mat-icon>{{repo.forks_count}}
+        </div>
+        <div class="card-caracteristica" *ngIf="repo.language">
+          <mat-icon>code</mat-icon>{{repo.language}}
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <p class="card-body">
+    {{repo.description}}
+  </p>
+</mat-expansion-panel>
